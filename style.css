@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'poppins' sans-serif;
+}
+
+body {
+    background-color: #fff;
+    font-family: 'poppins' sans-serif;
+}
+
+.form_container {
+    background-color: #dadada;
+    padding: 20px;
+    display: flex;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 400px;
+
+    .form_wrapper {
+        /* background-color: red; */
+
+        h2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .fields {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            /* background-color: yellow; */
+            margin-top: 20px;
+
+            .input_fields {
+                /* background-color: yellowgreen; */
+                display: flex;
+                flex-direction: column;
+                label{
+                font-size: 20px;
+                margin-top: 10px;
+                }
+                input{
+                    padding: 5px 10px;
+                    font-size: 20px;
+                    border-radius: 5px;
+                    border: 1px solid black;
+                }
+            }
+        }
+        .submit_btn{
+            display: flex;
+            justify-content: center;
+            button{
+                font-size: 20px;
+                padding: 5px 10px;
+                border: none;
+                border-radius: 5px;
+                width: 100px;
+                margin-top: 20px;
+            }
+        }
+        .link{
+            margin-top: 10px;
+        }
+    }
+}
+.hide{
+    display: none;
+}
+
+.form_container_register {
+    background-color: #dadada;
+    padding: 20px;
+    display: flex;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    width: 800px;
+
+    .form_wrapper {
+        /* background-color: red; */
+
+        h2 {
+            display: flex;
+            justify-content: center;
+        }
+
+        .fields {
+            display: flex;
+            flex-direction:row;
+            justify-content: center;
+            flex-wrap: wrap;
+            /* background-color: yellow; */
+            margin-top: 20px;
+
+            .input_fields {
+                /* background-color: yellowgreen; */
+                display: flex;
+                margin-left: 20px;
+                flex-direction: column;
+                label{
+                font-size: 20px;
+                margin-top: 10px;
+                }
+                input, select{
+                    padding: 5px 10px;
+                    font-size: 20px;
+                    border-radius: 5px;
+                    border: 1px solid black;
+                    width: 300px;
+                }
+            }
+        }
+        .submit_btn{
+            display: flex;
+            justify-content: center;
+            button{
+                font-size: 20px;
+                padding: 5px 10px;
+                border: none;
+                border-radius: 5px;
+                width: 100px;
+                margin-top: 20px;
+            }
+        }
+        .link{
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+            font-size: 20px;
+        }
+    }
+}

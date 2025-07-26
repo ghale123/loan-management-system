@@ -1,0 +1,310 @@
+:root {
+  --primaryColor: #1c5f5f;
+  --secondaryColor: #d6e7d5;
+  --bodyColor: #edeef3;
+  --lightGreyColor: #f4f5fa;
+  --whiteColor: #ffffff;
+  --blackColor: #222;
+  --lightBlackColor: #454955;
+  --darkPurpleColor: #2c2f4e;
+  --redColor: rgb(255, 55, 0);
+  --greenColor: rgb(89, 183, 110);
+  --lightBlue: rgb(52, 116, 245);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: poppins;
+  background-color: var(--whiteColor);
+}
+
+.sidebar {
+  background-color: var(--whiteColor);
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  padding: 10px;
+  height: 100vh;
+  position: sticky;
+}
+
+a {
+  text-decoration: none;
+}
+
+.logo_img {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  /* background-color: red; */
+  img {
+    width: 150px;
+  }
+  p{
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
+
+.menu_container {
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 350px;
+  margin-top: 20px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  font-size: 20px;
+  /* background-color: yellowgreen; */
+  padding: 15px 20px;
+  color: var(--blackColor);
+}
+
+.menu:hover {
+  border: 2px solid var(--primaryColor);
+  border-radius: 100px;
+  color: var(--primaryColor);
+}
+
+.hide {
+  display: none;
+}
+
+.active {
+  border: 2px solid var(--primaryColor);
+  border-radius: 100px;
+  color: var(--primaryColor);
+}
+
+.menu p {
+  font-size: 18px;
+  margin-left: 10px;
+}
+
+.line {
+  height: 0.5px;
+  width: 90%;
+  background-color: rgb(211, 211, 211);
+  margin: 20px 10px;
+}
+
+.body_container {
+  display: flex;
+}
+
+.main_section {
+  /* background-color: red; */
+  padding: 20px;
+  width: 100%;
+}
+
+.header {
+  background-color: var(--lightGreyColor);
+  display: flex;
+  align-items: center;
+  border-radius: 10px;
+  justify-content: space-between;
+}
+
+.search_btn {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  input {
+    border: 1px solid var(--blackColor);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 20px;
+    width: 300px;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 5px 10px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 10px;
+    background-color: var(--primaryColor);
+    color: var(--whiteColor);
+  }
+}
+
+.profile_btn {
+  background-color: var(--whiteColor);
+  display: flex;
+  align-items: center;
+  border-radius: 100px;
+  height: 45px;
+
+  .letter {
+    width: 50px;
+    height: 50px;
+    font-size: 50px;
+    background-color: var(--whiteColor);
+    color: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100px;
+    box-shadow: rgba(1, 1, 1, 0.2) 0px 2px 10px 2px;
+  }
+
+  p {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+  }
+}
+
+.loan_request {
+  /* background-color: red; */
+  h2 {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .table_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* background-color: yellow; */
+    padding: 0;
+
+    th {
+      border: none;
+      background-color: var(--lightBlue);
+      font-size: 18px;
+      padding: 5px;
+      color: var(--whiteColor);
+    }
+
+    .data {
+      display: flex;
+      justify-content: center;
+      padding: 10px 20px;
+      font-size: 18px;
+    }
+
+    .action_data {
+      /* background-color: red; */
+      padding: 5px 10px;
+
+      button {
+        background-color: var(--redColor);
+        font-size: 15px;
+        border: none;
+        color: var(--whiteColor);
+        padding: 5px 10px;
+        margin-left: 10px;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.user_container {
+  padding: 20px;
+
+  h2 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .table_wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+
+    th {
+      border: none;
+      background-color: var(--lightBlue);
+      color: var(--whiteColor);
+      padding: 5px;
+      font-size: 18px;
+    }
+    .data {
+      padding: 5px 10px;
+      font-size: 18px;
+      display: flex;
+      justify-content: center;
+    }
+    .action_data {
+      padding: 5px 10px;
+      button {
+        font-size: 18px;
+        padding: 5px 10px;
+        background-color: var(--redColor);
+        color: var(--whiteColor);
+        border: none;
+        border-radius: 5px;
+      }
+    }
+  }
+}
+
+.dashboard {
+  padding: 20px;
+  .card_container {
+    /* background-color: red; */
+    display: flex;
+    justify-content: space-between;
+    .card {
+      background-color: var(--lightGreyColor);
+      padding: 20px;
+      display: flex;
+      border: none;
+      border-radius: 10px;
+      width: 100%;
+      height: 150px;
+      margin-left: 50px;
+      align-items: center;
+      div {
+        /* background-color: yellow; */
+        p {
+          font-size: 18px;
+          font-weight: 500;
+          color: var(--lightBlackColor);
+        }
+        span {
+          font-size: 25px;
+          font-weight: 600;
+          color: black;
+        }
+        .recived_pending {
+          /* background-color: yellow; */
+          display: flex;
+          p {
+            align-items: center;
+            font-size: 15px;
+            span {
+              font-size: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.pending {
+  /* background-color: red; */
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  p {
+    font-size: 15px;
+    span {
+      font-size: 18px;
+    }
+  }
+}
